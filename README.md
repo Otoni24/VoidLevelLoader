@@ -78,7 +78,6 @@ int main()
 
 ## Dependencies
 
-  * [SFML](https://github.com/SFML/SFML) as its public data structures (like `sf::Vector2f`) are exposed in the API.
   * [nlohmann/json](https://github.com/nlohmann/json) as an internal dependency for parsing the JSON level file format.
 
 -----
