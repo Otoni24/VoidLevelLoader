@@ -1,6 +1,8 @@
 ﻿#pragma once
 
 #include <iostream>
+#include <vector>
+#include <optional>
 
 namespace vll
 {
