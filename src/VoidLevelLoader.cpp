@@ -50,7 +50,7 @@ namespace vll
 				goData.origin.y = originJson.at("y").get<float>();
 
 				const auto& rotationJson = goJson.at("rotation");
-				goData.rotation = sf::degrees(rotationJson.at("degrees").get<float>());
+				goData.rotationDegrees = rotationJson.at("degrees").get<float>();
 
 				levelData.gameObjectsData.push_back(goData);
 			}
@@ -59,13 +59,13 @@ namespace vll
 
 			for (const auto& chainJson : hitboxMapJson)
 			{
-				std::vector<sf::Vector2f> chainData;
+				std::vector<Vec2f> chainData;
 
 				const auto& verticesJson = chainJson.at("vertices");
 
 				for (const auto& vertexJson : verticesJson)
 				{
-					sf::Vector2f vertexData;
+					Vec2f vertexData;
 
 					const auto& vertexPosJson = vertexJson.at("position");
 
