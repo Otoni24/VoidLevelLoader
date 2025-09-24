@@ -16,7 +16,6 @@ add_library(VoidLevelLoader STATIC
     "src/VoidLevelLoader.cpp"
  )
 
-target_include_directories(VoidLevelLoader PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_include_directories(VoidLevelLoader PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_compile_features(VoidLevelLoader PRIVATE cxx_std_17)
+target_compile_features(VoidLevelLoader PUBLIC cxx_std_17)
 target_link_libraries(VoidLevelLoader PRIVATE nlohmann_json::nlohmann_json)
