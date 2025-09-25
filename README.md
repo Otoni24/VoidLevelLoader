@@ -18,7 +18,7 @@ include(FetchContent)
 FetchContent_Declare(
     VoidLevelLoader
     GIT_REPOSITORY https://github.com/Otoni24/VoidLevelLoader.git
-    GIT_TAG        "master"
+    GIT_TAG        "master" or a specific tag such as "v1.0.0"
 )
 
 FetchContent_MakeAvailable(VoidLevelLoader)
